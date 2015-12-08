@@ -65,6 +65,9 @@
                                     <constraint firstItem="3Qb-Ui-eO7" firstAttribute="leading" secondItem="KU5-bU-REK" secondAttribute="leading" constant="2" id="cKt-qi-nmE"/>
                                     <constraint firstItem="3Qb-Ui-eO7" firstAttribute="top" secondItem="KU5-bU-REK" secondAttribute="top" constant="2" id="me4-eH-SZH"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="ljD-dV-frr" kind="show" identifier="MasterToDetail" id="lPC-jC-b3L"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
