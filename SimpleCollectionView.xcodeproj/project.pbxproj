@@ -16,6 +16,7 @@
 		7B10CFBE1A605136002E8DF3 /* PapersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBD1A605136002E8DF3 /* PapersDataSource.swift */; };
 		7B10CFC01A605167002E8DF3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */; };
 		E150030C1C16AA0C00629C12 /* MasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E150030B1C16AA0C00629C12 /* MasterCollectionViewController.swift */; };
+		E150030E1C17CE2700629C12 /* PaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E150030D1C17CE2700629C12 /* PaperCollectionViewCell.swift */; };
 		E1CD31BA1C16A30C006CD7B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CD31B91C16A30C006CD7B6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		7B10CFBD1A605136002E8DF3 /* PapersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PapersDataSource.swift; sourceTree = "<group>"; };
 		7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E150030B1C16AA0C00629C12 /* MasterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewController.swift; sourceTree = "<group>"; };
+		E150030D1C17CE2700629C12 /* PaperCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1CD31B91C16A30C006CD7B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 		7B10CFB81A604F90002E8DF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E150030D1C17CE2700629C12 /* PaperCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				7B10CFBE1A605136002E8DF3 /* PapersDataSource.swift in Sources */,
 				E150030C1C16AA0C00629C12 /* MasterCollectionViewController.swift in Sources */,
 				7B10CFC01A605167002E8DF3 /* DetailViewController.swift in Sources */,
+				E150030E1C17CE2700629C12 /* PaperCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

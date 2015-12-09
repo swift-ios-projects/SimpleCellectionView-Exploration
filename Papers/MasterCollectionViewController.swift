@@ -61,9 +61,15 @@ class MasterCollectionViewController: UICollectionViewController {
         return papersDataSource.count
     }
 
+    // this function returns the cell that will be used in the PaperCollectionViewCell class
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PaperCell", forIndexPath: indexPath) as UICollectionViewCell
-        return cell
+        
+        // deque the cell and cast it as PaperCollictionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PaperCell", forIndexPath: indexPath) as? PaperCollectionViewCell
+        if let paper = papersDataSource.paperForItemAtIndexPath(indexPath) {
+            cell!.paper = paper
+        }
+        return cell!
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
