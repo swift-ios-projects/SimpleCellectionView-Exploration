@@ -10,12 +10,19 @@ import UIKit
 
 class PaperCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var paperImageView: UIImageView!
+
+    @IBOutlet var gradiantView: GradientView!
+    @IBOutlet var captionLabel: UILabel!
+
+    
+    
+    @IBOutlet var paperImageView: UIImageView!
     
     var paper: Paper? {
         didSet {
             if let paper = paper {
                  paperImageView.image = UIImage(named: paper.imageName)
+                captionLabel.text = paper.caption
             }
         }
     }

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -53,18 +54,45 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <animations/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPC-uh-ekE" customClass="GradientView" customModule="SimpleCollectionView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="170" width="200" height="30"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="WYq-fi-ve0"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrE-3Z-c88">
+                                            <rect key="frame" x="8" y="170" width="184" height="30"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="SRY-ji-YJH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <animations/>
                                 <constraints>
+                                    <constraint firstItem="kPC-uh-ekE" firstAttribute="leading" secondItem="KU5-bU-REK" secondAttribute="leading" id="1xt-fP-e0T"/>
                                     <constraint firstItem="FdO-Bq-HqH" firstAttribute="top" secondItem="KU5-bU-REK" secondAttribute="top" id="3ss-pw-ZWW"/>
+                                    <constraint firstItem="mrE-3Z-c88" firstAttribute="trailing" secondItem="KU5-bU-REK" secondAttribute="trailingMargin" id="4ce-hF-G6L"/>
+                                    <constraint firstAttribute="bottom" secondItem="kPC-uh-ekE" secondAttribute="bottom" id="Fni-08-Dhr"/>
+                                    <constraint firstItem="kPC-uh-ekE" firstAttribute="top" secondItem="mrE-3Z-c88" secondAttribute="bottom" constant="-30" id="J4p-KB-Lu2"/>
                                     <constraint firstAttribute="bottom" secondItem="FdO-Bq-HqH" secondAttribute="bottom" id="a5z-mP-xip"/>
+                                    <constraint firstAttribute="trailing" secondItem="kPC-uh-ekE" secondAttribute="trailing" id="aBR-uO-Xoo"/>
+                                    <constraint firstItem="kPC-uh-ekE" firstAttribute="leading" secondItem="KU5-bU-REK" secondAttribute="leading" id="ldc-fL-dof"/>
+                                    <constraint firstItem="mrE-3Z-c88" firstAttribute="leading" secondItem="KU5-bU-REK" secondAttribute="leadingMargin" id="nCJ-Ka-7rh"/>
                                     <constraint firstItem="FdO-Bq-HqH" firstAttribute="leading" secondItem="KU5-bU-REK" secondAttribute="leading" id="rAC-bm-cUb"/>
                                     <constraint firstAttribute="trailing" secondItem="FdO-Bq-HqH" secondAttribute="trailing" id="uNk-wA-JaU"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="captionLabel" destination="mrE-3Z-c88" id="s9o-T6-OWf"/>
+                                    <outlet property="gradiantView" destination="kPC-uh-ekE" id="MNg-Wz-mS6"/>
                                     <outlet property="paperImageView" destination="FdO-Bq-HqH" id="Mwe-fC-7ht"/>
                                     <segue destination="ljD-dV-frr" kind="show" identifier="MasterToDetail" id="lPC-jC-b3L"/>
                                 </connections>
