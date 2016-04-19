@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,14 +15,11 @@
 		7B10CFBC1A60511A002E8DF3 /* Paper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBB1A60511A002E8DF3 /* Paper.swift */; };
 		7B10CFBE1A605136002E8DF3 /* PapersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBD1A605136002E8DF3 /* PapersDataSource.swift */; };
 		7B10CFC01A605167002E8DF3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */; };
-		E150030C1C16AA0C00629C12 /* MasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E150030B1C16AA0C00629C12 /* MasterCollectionViewController.swift */; };
-		E150030E1C17CE2700629C12 /* PaperCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E150030D1C17CE2700629C12 /* PaperCollectionViewCell.swift */; };
-		E15003121C17ED3000629C12 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15003111C17ED3000629C12 /* GradientView.swift */; };
-		E1CD31BA1C16A30C006CD7B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CD31B91C16A30C006CD7B6 /* Default-568h@2x.png */; };
+		E1D389421CC325C40031D74D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D389411CC325C40031D74D /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B10CF8C1A604F02002E8DF3 /* SimpleCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B10CF8C1A604F02002E8DF3 /* Papers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Papers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B10CF901A604F02002E8DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B10CF911A604F02002E8DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B10CF961A604F02002E8DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,10 +29,7 @@
 		7B10CFBB1A60511A002E8DF3 /* Paper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paper.swift; sourceTree = "<group>"; };
 		7B10CFBD1A605136002E8DF3 /* PapersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PapersDataSource.swift; sourceTree = "<group>"; };
 		7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		E150030B1C16AA0C00629C12 /* MasterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewController.swift; sourceTree = "<group>"; };
-		E150030D1C17CE2700629C12 /* PaperCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperCollectionViewCell.swift; sourceTree = "<group>"; };
-		E15003111C17ED3000629C12 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		E1CD31B91C16A30C006CD7B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E1D389411CC325C40031D74D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +46,7 @@
 		7B10CF831A604F02002E8DF3 = {
 			isa = PBXGroup;
 			children = (
-				E1CD31B91C16A30C006CD7B6 /* Default-568h@2x.png */,
-				7B10CF8E1A604F02002E8DF3 /* SimpleCollectionView */,
+				7B10CF8E1A604F02002E8DF3 /* Papers */,
 				7B10CF8D1A604F02002E8DF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,12 +54,12 @@
 		7B10CF8D1A604F02002E8DF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B10CF8C1A604F02002E8DF3 /* SimpleCollectionView.app */,
+				7B10CF8C1A604F02002E8DF3 /* Papers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B10CF8E1A604F02002E8DF3 /* SimpleCollectionView */ = {
+		7B10CF8E1A604F02002E8DF3 /* Papers */ = {
 			isa = PBXGroup;
 			children = (
 				7B10CFB11A604F61002E8DF3 /* Controllers */,
@@ -79,7 +72,6 @@
 				7B10CF8F1A604F02002E8DF3 /* Supporting Files */,
 				7B10CFB81A604F90002E8DF3 /* Views */,
 			);
-			name = SimpleCollectionView;
 			path = Papers;
 			sourceTree = "<group>";
 		};
@@ -95,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */,
-				E150030B1C16AA0C00629C12 /* MasterCollectionViewController.swift */,
+				E1D389411CC325C40031D74D /* MasterViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -152,8 +144,6 @@
 		7B10CFB81A604F90002E8DF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E15003111C17ED3000629C12 /* GradientView.swift */,
-				E150030D1C17CE2700629C12 /* PaperCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -161,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B10CF8B1A604F02002E8DF3 /* SimpleCollectionView */ = {
+		7B10CF8B1A604F02002E8DF3 /* Papers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B10CFAB1A604F02002E8DF3 /* Build configuration list for PBXNativeTarget "SimpleCollectionView" */;
+			buildConfigurationList = 7B10CFAB1A604F02002E8DF3 /* Build configuration list for PBXNativeTarget "Papers" */;
 			buildPhases = (
 				7B10CF881A604F02002E8DF3 /* Sources */,
 				7B10CF891A604F02002E8DF3 /* Frameworks */,
@@ -173,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = SimpleCollectionView;
+			name = Papers;
 			productName = Papers;
-			productReference = 7B10CF8C1A604F02002E8DF3 /* SimpleCollectionView.app */;
+			productReference = 7B10CF8C1A604F02002E8DF3 /* Papers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,18 +174,18 @@
 		7B10CF841A604F02002E8DF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 0710;
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = leanrob;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Razeware LLC";
 				TargetAttributes = {
 					7B10CF8B1A604F02002E8DF3 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 7B10CF871A604F02002E8DF3 /* Build configuration list for PBXProject "SimpleCollectionView" */;
-			compatibilityVersion = "Xcode 6.3";
+			buildConfigurationList = 7B10CF871A604F02002E8DF3 /* Build configuration list for PBXProject "Papers" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -207,7 +197,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B10CF8B1A604F02002E8DF3 /* SimpleCollectionView */,
+				7B10CF8B1A604F02002E8DF3 /* Papers */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +210,6 @@
 				7B10CF971A604F02002E8DF3 /* Main.storyboard in Resources */,
 				7B10CFBA1A6050DA002E8DF3 /* Papers.plist in Resources */,
 				7B10CF9C1A604F02002E8DF3 /* LaunchScreen.xib in Resources */,
-				E1CD31BA1C16A30C006CD7B6 /* Default-568h@2x.png in Resources */,
 				7B10CF991A604F02002E8DF3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,13 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D389421CC325C40031D74D /* MasterViewController.swift in Sources */,
 				7B10CFBC1A60511A002E8DF3 /* Paper.swift in Sources */,
 				7B10CF921A604F02002E8DF3 /* AppDelegate.swift in Sources */,
 				7B10CFBE1A605136002E8DF3 /* PapersDataSource.swift in Sources */,
-				E150030C1C16AA0C00629C12 /* MasterCollectionViewController.swift in Sources */,
-				E15003121C17ED3000629C12 /* GradientView.swift in Sources */,
 				7B10CFC01A605167002E8DF3 /* DetailViewController.swift in Sources */,
-				E150030E1C17CE2700629C12 /* PaperCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -335,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -345,27 +332,29 @@
 		7B10CFAC1A604F02002E8DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Papers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leanrob.SimpleCollectionView;
-				PRODUCT_NAME = SimpleCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		7B10CFAD1A604F02002E8DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Papers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leanrob.SimpleCollectionView;
-				PRODUCT_NAME = SimpleCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B10CF871A604F02002E8DF3 /* Build configuration list for PBXProject "SimpleCollectionView" */ = {
+		7B10CF871A604F02002E8DF3 /* Build configuration list for PBXProject "Papers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B10CFA91A604F02002E8DF3 /* Debug */,
@@ -374,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B10CFAB1A604F02002E8DF3 /* Build configuration list for PBXNativeTarget "SimpleCollectionView" */ = {
+		7B10CFAB1A604F02002E8DF3 /* Build configuration list for PBXNativeTarget "Papers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B10CFAC1A604F02002E8DF3 /* Debug */,

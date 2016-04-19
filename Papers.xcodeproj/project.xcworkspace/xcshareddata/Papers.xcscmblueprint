@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ACFE2302EF3E6A5A68C1AEDB21BB4807A89B56EA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ACFE2302EF3E6A5A68C1AEDB21BB4807A89B56EA" : 0,
+    "13615C9A1D74E924EFE027E9AA5FFA3E76F6B148" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9B6D85C4-4243-42E2-A304-A9F5332D4A6C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ACFE2302EF3E6A5A68C1AEDB21BB4807A89B56EA" : "SimpleCellectionView-Exploration\/",
+    "13615C9A1D74E924EFE027E9AA5FFA3E76F6B148" : "Papers"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Papers",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Papers.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/micpringle\/Papers.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13615C9A1D74E924EFE027E9AA5FFA3E76F6B148"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/swift-ios-projects\/SimpleCellectionView-Exploration",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ACFE2302EF3E6A5A68C1AEDB21BB4807A89B56EA"
+    }
+  ]
+}

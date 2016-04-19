@@ -2,8 +2,8 @@
 //  DetailViewController.swift
 //  Wallpapers
 //
-//  Created by Robert Byrne
-//  lenarob.com
+//  Created by Mic Pringle on 07/01/2015.
+//  Copyright (c) 2015 Razeware LLC. All rights reserved.
 //
 
 import UIKit
