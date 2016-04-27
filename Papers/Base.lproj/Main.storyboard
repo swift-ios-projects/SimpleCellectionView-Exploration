@@ -50,16 +50,38 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZG-WA-I0Y">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-7b-3i8" customClass="GradientView" customModule="Papers" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="170" width="200" height="30"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkm-zG-Q8G">
+                                                    <rect key="frame" x="79" y="4" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="vkm-zG-Q8G" firstAttribute="centerX" secondItem="aFK-7b-3i8" secondAttribute="centerX" id="0xw-fM-WTj"/>
+                                                <constraint firstAttribute="height" constant="30" id="5Sk-TN-qlk"/>
+                                                <constraint firstItem="vkm-zG-Q8G" firstAttribute="centerY" secondItem="aFK-7b-3i8" secondAttribute="centerY" id="5hu-SO-pt2"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aFK-7b-3i8" secondAttribute="trailing" id="2Ed-ly-L4q"/>
                                     <constraint firstAttribute="bottom" secondItem="yZG-WA-I0Y" secondAttribute="bottom" id="3Ea-lg-wlN"/>
                                     <constraint firstAttribute="trailing" secondItem="yZG-WA-I0Y" secondAttribute="trailing" id="Hhb-zf-HTZ"/>
                                     <constraint firstItem="yZG-WA-I0Y" firstAttribute="leading" secondItem="w1y-cw-pfC" secondAttribute="leading" id="S5F-pb-9jE"/>
+                                    <constraint firstItem="aFK-7b-3i8" firstAttribute="leading" secondItem="w1y-cw-pfC" secondAttribute="leading" id="SN6-uT-Dcx"/>
                                     <constraint firstItem="yZG-WA-I0Y" firstAttribute="top" secondItem="w1y-cw-pfC" secondAttribute="top" id="nJH-A0-PNS"/>
+                                    <constraint firstAttribute="bottom" secondItem="aFK-7b-3i8" secondAttribute="bottom" id="yru-tt-MXn"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="captionLabel" destination="vkm-zG-Q8G" id="gYZ-3K-eOX"/>
+                                    <outlet property="gradientView" destination="aFK-7b-3i8" id="Tq3-rr-ad8"/>
                                     <outlet property="paperImageView" destination="yZG-WA-I0Y" id="6dX-FE-Pr6"/>
                                 </connections>
                             </collectionViewCell>
