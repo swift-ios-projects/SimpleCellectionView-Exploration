@@ -40,26 +40,28 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PaperCell" id="w1y-cw-pfC">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PaperCell" id="w1y-cw-pfC" customClass="PaperCell" customModule="Papers" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvf-98-pRV">
-                                            <rect key="frame" x="2" y="2" width="196" height="196"/>
-                                            <color key="backgroundColor" red="0.0" green="0.7368087369109948" blue="0.028615020136841102" alpha="1" colorSpace="calibratedRGB"/>
-                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZG-WA-I0Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="Yvf-98-pRV" firstAttribute="leading" secondItem="w1y-cw-pfC" secondAttribute="leading" constant="2" id="4Sh-FC-xqM"/>
-                                    <constraint firstItem="Yvf-98-pRV" firstAttribute="top" secondItem="w1y-cw-pfC" secondAttribute="top" constant="2" id="FIl-h6-kbN"/>
-                                    <constraint firstAttribute="trailing" secondItem="Yvf-98-pRV" secondAttribute="trailing" constant="2" id="KEZ-WI-VUK"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yvf-98-pRV" secondAttribute="bottom" constant="2" id="tDY-dy-dic"/>
+                                    <constraint firstAttribute="bottom" secondItem="yZG-WA-I0Y" secondAttribute="bottom" id="3Ea-lg-wlN"/>
+                                    <constraint firstAttribute="trailing" secondItem="yZG-WA-I0Y" secondAttribute="trailing" id="Hhb-zf-HTZ"/>
+                                    <constraint firstItem="yZG-WA-I0Y" firstAttribute="leading" secondItem="w1y-cw-pfC" secondAttribute="leading" id="S5F-pb-9jE"/>
+                                    <constraint firstItem="yZG-WA-I0Y" firstAttribute="top" secondItem="w1y-cw-pfC" secondAttribute="top" id="nJH-A0-PNS"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="paperImageView" destination="yZG-WA-I0Y" id="6dX-FE-Pr6"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
