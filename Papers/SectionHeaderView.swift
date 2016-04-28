@@ -11,6 +11,13 @@ import UIKit
 class SectionHeaderView: UICollectionReusableView {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
+    
+    var icon: UIImage? {
+        didSet {
+            iconImageView.image = icon
+        }
+    }
     
     var title: String? {
         didSet {
