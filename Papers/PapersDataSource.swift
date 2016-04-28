@@ -76,6 +76,10 @@ class PapersDataSource {
     papers.insert(paper, atIndex: newIndex)
   }
   
+    
+    /**
+     Grabs the count of papers in the current section and returns the count of them
+    */
   func numberOfPapersInSection(index: Int) -> Int {
     let papers = papersForSection(index)
     return papers.count
@@ -120,7 +124,7 @@ class PapersDataSource {
             let section = dict["section"] as! String
             let index = dict["index"] as! Int
             let paper = Paper(caption: caption, imageName: imageName, section: section, index: index)
-            if sections.contains(section) {
+            if !sections.contains(section) {
               sections.append(section)
             }
             papers.append(paper)
@@ -132,6 +136,9 @@ class PapersDataSource {
     return []
   }
   
+    /**
+ 
+    */
   private func papersForSection(index: Int) -> [Paper] {
     let section = sections[index]
     let papersInSection = papers.filter { (paper: Paper) -> Bool in
