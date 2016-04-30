@@ -24,6 +24,31 @@ class MasterViewController: UICollectionViewController {
         
     }
     
+    // MARK: MasterViewController
+    
+    @IBAction func addButtonTapped(sender: UIBarButtonItem) {
+        
+        let indexPath = papersDataSource.indexPathForNewRandomPaper()
+        collectionView!.insertItemsAtIndexPaths([indexPath])
+        
+        // Setting up the PapersFlowLayout created in the Layouts folder
+        let layout = collectionViewLayout as! PapersFlowLayout
+        layout.appearingIndexPath = indexPath
+        
+        UIView.animateWithDuration(1.0, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 0.0, options: .CurveEaseInOut, animations: { () -> Void
+            in
+            let indexPath = self.papersDataSource.indexPathForNewRandomPaper()
+            self.collectionView!.insertItemsAtIndexPaths([indexPath])
+            
+            }, completion:  { (finished: Bool) -> Void in
+                
+                layout.appearingIndexPath = nil
+                
+        })
+        
+    }
+    
+    
     // MARK: CollectionViewDataSource
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

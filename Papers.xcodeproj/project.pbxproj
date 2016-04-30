@@ -16,6 +16,7 @@
 		7B10CFBE1A605136002E8DF3 /* PapersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBD1A605136002E8DF3 /* PapersDataSource.swift */; };
 		7B10CFC01A605167002E8DF3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */; };
 		E11CCECE1CD188B7001EF8EA /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11CCECD1CD188B7001EF8EA /* SectionHeaderView.swift */; };
+		E12572191CD56FE7004C1C58 /* PapersFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12572181CD56FE7004C1C58 /* PapersFlowLayout.swift */; };
 		E1876F3C1CD0745100C13EE4 /* PaperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1876F3B1CD0745100C13EE4 /* PaperCell.swift */; };
 		E1876F401CD07BE600C13EE4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1876F3F1CD07BE600C13EE4 /* GradientView.swift */; };
 		E1D389421CC325C40031D74D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D389411CC325C40031D74D /* MasterViewController.swift */; };
@@ -33,6 +34,7 @@
 		7B10CFBD1A605136002E8DF3 /* PapersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PapersDataSource.swift; sourceTree = "<group>"; };
 		7B10CFBF1A605167002E8DF3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E11CCECD1CD188B7001EF8EA /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		E12572181CD56FE7004C1C58 /* PapersFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PapersFlowLayout.swift; sourceTree = "<group>"; };
 		E1876F3B1CD0745100C13EE4 /* PaperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperCell.swift; sourceTree = "<group>"; };
 		E1876F3F1CD07BE600C13EE4 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E1D389411CC325C40031D74D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		7B10CFB41A604F76002E8DF3 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				E12572181CD56FE7004C1C58 /* PapersFlowLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				7B10CF921A604F02002E8DF3 /* AppDelegate.swift in Sources */,
 				E1876F401CD07BE600C13EE4 /* GradientView.swift in Sources */,
 				7B10CFBE1A605136002E8DF3 /* PapersDataSource.swift in Sources */,
+				E12572191CD56FE7004C1C58 /* PapersFlowLayout.swift in Sources */,
 				7B10CFC01A605167002E8DF3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
