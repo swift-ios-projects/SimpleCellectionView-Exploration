@@ -14,6 +14,10 @@ class MasterViewController: UICollectionViewController {
     
     private var papersDataSource = PapersDataSource()
     
+    private var snapshot: UIView?
+    private var sourceIndexPath: NSIndexPath?
+    
+    
     // MARK: UIViewController
     
     override func viewDidLoad() {
@@ -28,6 +32,10 @@ class MasterViewController: UICollectionViewController {
         let width = CGRectGetWidth(collectionView!.frame) / 3
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
+        
+        // add the long press gesture recognizer to allow moving cells
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "handleLongPress:")
+        collectionView!.addGestureRecognizer(longPressGestureRecognizer)
         
     }
     
@@ -93,6 +101,58 @@ class MasterViewController: UICollectionViewController {
             
         }) { (finished: Bool) -> Void in
             layout.disappearingItemsIndexPaths = nil
+        }
+    }
+    
+    private func updateSnapshotView(center: CGPoint, transform: CGAffineTransform, alpha: CGFloat) {
+        if let snapshot = snapshot {
+            snapshot.center = center
+            snapshot.transform = transform
+            snapshot.alpha = alpha
+        }
+    }
+    
+    func handleLongPress(recognizer: UILongPressGestureRecognizer ) {
+        if editing {
+            return
+        }
+        
+        let location = recognizer.locationInView(collectionView)
+        let indexPath = collectionView!.indexPathForItemAtPoint(location)
+        
+        switch recognizer.state {
+        case .Began:
+            if let indexPath = indexPath {
+                sourceIndexPath = indexPath
+                let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! PaperCell
+                snapshot = cell.snapshot
+                updateSnapshotView(cell.center, transform: cell.transform, alpha: cell.alpha)
+                collectionView!.addSubview(snapshot!)
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
+                    self.updateSnapshotView(cell.center, transform: CGAffineTransformMakeScale(1.05, 1.05), alpha: 0.95)
+                    cell.moving = true
+                })
+            }
+            
+            
+        case .Changed:
+            self.snapshot!.center = location
+            if let indexPath = indexPath {
+                papersDataSource.movePaperAtIndexPath(sourceIndexPath!, toIndexPath: indexPath)
+                collectionView!.moveItemAtIndexPath(sourceIndexPath!, toIndexPath: indexPath)
+                sourceIndexPath = indexPath
+            }
+            
+            
+        default:
+            let cell = collectionView!.cellForItemAtIndexPath(sourceIndexPath!) as! PaperCell
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                self.updateSnapshotView(cell.center, transform: CGAffineTransformIdentity, alpha: 0.0)
+                cell.moving = false
+                }, completion:  { (finished: Bool) -> Void in
+                    self.snapshot!.removeFromSuperview()
+                    self.snapshot = nil
+            })
         }
     }
     
