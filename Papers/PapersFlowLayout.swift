@@ -11,6 +11,7 @@ import UIKit
 class PapersFlowLayout: UICollectionViewFlowLayout {
     
     var appearingIndexPath: NSIndexPath?
+    var disappearingItemsIndexPaths: [NSIndexPath]?
     
     override func initialLayoutAttributesForAppearingItemAtIndexPath(itemIndexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         
@@ -30,6 +31,21 @@ class PapersFlowLayout: UICollectionViewFlowLayout {
             }
         }
         
+        return attributes
+    }
+    
+    override func finalLayoutAttributesForDisappearingItemAtIndexPath(itemIndexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
+        let attributes = super.finalLayoutAttributesForDisappearingItemAtIndexPath(itemIndexPath)
+        
+        if let indexPaths = disappearingItemsIndexPaths {
+            if let attributes = attributes {
+                if indexPaths.contains(itemIndexPath) {
+                    attributes.alpha = 1.0
+                    attributes.transform = CGAffineTransformMakeScale(0.1, 0.1)
+                    attributes.zIndex = -1
+                }
+            }
+        }
         return attributes
     }
 }

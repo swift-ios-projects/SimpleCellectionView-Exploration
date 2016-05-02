@@ -13,6 +13,22 @@ class PaperCell: UICollectionViewCell {
     @IBOutlet weak var paperImageView: UIImageView!
     @IBOutlet weak var gradientView: GradientView!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var checkImageView: UIImageView!
+    
+    var editing: Bool = false {
+        didSet {
+            captionLabel.hidden = editing
+            checkImageView.hidden = !editing
+        }
+    }
+    
+    override var selected: Bool {
+        didSet {
+            if editing {
+                checkImageView.image = UIImage(named: selected ? "Checked" : "Unchecked")
+            }
+        }
+    }
     
     var paper: Paper? {
         didSet {
